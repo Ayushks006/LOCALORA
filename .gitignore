@@ -1,0 +1,53 @@
+# Dependencies
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Environment and Secret files
+.env
+.env.*
+*.env
+!.env.example
+
+# Local SQLite databases & backups
+data/*
+data/**/*
+!data/.gitkeep
+backend/data/*
+backend/data/**/*
+!backend/data/.gitkeep
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+*.sqlite3
+*.db
+*.db-journal
+*.backup*
+
+# Build outputs
+dist/
+*/dist/
+**/dist/
+build/
+.turbo/
+coverage/
+
+# User-uploaded dynamic files
+backend/uploads/*
+backend/uploads/**/*
+!backend/uploads/.gitkeep
+frontend/public/uploads/*
+frontend/public/uploads/**/*
+!frontend/public/uploads/.gitkeep
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS & IDE files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
